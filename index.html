@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>オランジェット対策｜大浜・ぼくたま 施策比較</title>
+<title>オランジェット対策｜大浜 施策比較</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -33,7 +33,6 @@
     padding: 0 0 80px;
   }
 
-  /* Hero */
   .hero {
     background: linear-gradient(135deg, #1a1410 0%, #0f0e0c 60%);
     border-bottom: 1px solid var(--border);
@@ -75,7 +74,6 @@
     letter-spacing: 0.05em;
   }
 
-  /* Nav tabs */
   .tabs {
     display: flex;
     gap: 2px;
@@ -95,7 +93,6 @@
   .tab.active { color: var(--orange); border-bottom-color: var(--orange); }
   .tab:hover:not(.active) { color: var(--text); }
 
-  /* Sections */
   .sections { padding: 32px 40px 0; }
   .section { display: none; }
   .section.active { display: block; }
@@ -130,7 +127,6 @@
   }
   .section-note a:hover { text-decoration: underline; }
 
-  /* Table */
   .tbl-wrap {
     overflow-x: auto;
     border-radius: 8px;
@@ -143,9 +139,7 @@
     font-size: 12.5px;
     min-width: 900px;
   }
-  thead tr {
-    background: var(--surface2);
-  }
+  thead tr { background: var(--surface2); }
   thead th {
     padding: 10px 12px;
     text-align: right;
@@ -189,7 +183,6 @@
     white-space: nowrap;
   }
 
-  /* Chips */
   .chip {
     display: inline-block;
     font-family: 'DM Mono', monospace;
@@ -203,7 +196,6 @@
   .chip-red { background: rgba(224,96,96,0.15); color: var(--red); }
   .chip-muted { background: rgba(122,113,104,0.15); color: var(--muted); }
 
-  /* Stat row (summary cards) */
   .stats {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -227,7 +219,6 @@
   .stat-val.neg { color: var(--red); }
   .stat-val.warn { color: var(--orange); }
 
-  /* Arrow note */
   .arrow-note {
     display: flex;
     align-items: center;
@@ -241,17 +232,6 @@
     border-radius: 0 4px 4px 0;
   }
 
-  /* Divider label */
-  .divider-label {
-    font-size: 11px;
-    color: var(--muted);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    padding: 20px 0 8px;
-    border-top: 1px solid var(--border);
-    margin-top: 32px;
-  }
-
   @media (max-width: 640px) {
     .hero, .tabs, .sections { padding-left: 20px; padding-right: 20px; }
     .tabs { overflow-x: auto; }
@@ -263,14 +243,13 @@
 <div class="hero">
   <div class="hero-tag">🍊 STRATEGY DOC</div>
   <h1>オランジェット<span>対策</span></h1>
-  <div class="hero-sub">大浜 ／ ぼくたま　施策比較シート　—　2025</div>
+  <div class="hero-sub">大浜　施策比較シート　—　2025</div>
 </div>
 
 <div class="tabs">
   <div class="tab active" onclick="switchTab(0)">① 福袋＋オランジェット選択</div>
   <div class="tab" onclick="switchTab(1)">② 割れチョコ6袋おまけ</div>
   <div class="tab" onclick="switchTab(2)">③ クーベル福袋 2袋目選択</div>
-  <div class="tab" onclick="switchTab(3)">★ぼくたま ナッツショコラ</div>
 </div>
 
 <div class="sections">
@@ -282,7 +261,6 @@
       <span class="section-num">PLAN 01</span>
       <span class="section-title">今年一番売れた福袋　復活＋オランジェットが選べる</span>
     </div>
-
     <div class="stats">
       <div class="stat-card">
         <div class="stat-label">割れチョコ＋OJ 貢献利益率</div>
@@ -297,72 +275,40 @@
         <div class="stat-val pos">53%</div>
       </div>
     </div>
-
     <div class="tbl-wrap">
       <table>
         <thead>
           <tr>
-            <th>商品名</th>
-            <th>便種</th>
-            <th>店頭売価(税込)</th>
-            <th>実売(税込)</th>
-            <th>割引率</th>
-            <th>製品原価</th>
-            <th>送料原価</th>
-            <th>粗利</th>
-            <th>粗利率</th>
-            <th>fee計</th>
-            <th>貢献利益</th>
-            <th>貢献利益率</th>
+            <th>商品名</th><th>便種</th><th>店頭売価(税込)</th><th>実売(税込)</th>
+            <th>割引率</th><th>製品原価</th><th>送料原価</th><th>粗利</th>
+            <th>粗利率</th><th>fee計</th><th>貢献利益</th><th>貢献利益率</th>
           </tr>
         </thead>
         <tbody>
           <tr class="highlight">
             <td>【割れチョコ1個】選べるクーベルチュールの贅沢割れチョコ＋オランジェット</td>
-            <td>ゆうパケット3cm1個口</td>
-            <td>¥2,026</td>
-            <td>¥2,126</td>
-            <td><span class="chip chip-orange">-</span></td>
-            <td>¥1,320</td>
-            <td>¥219</td>
-            <td>¥430</td>
-            <td><span class="chip chip-orange">22%</span></td>
-            <td>10%</td>
-            <td><strong>¥213</strong></td>
-            <td><span class="chip chip-orange">10%</span></td>
+            <td>ゆうパケット3cm1個口</td><td>¥2,026</td><td>¥2,126</td>
+            <td><span class="chip chip-orange">-</span></td><td>¥1,320</td><td>¥219</td><td>¥430</td>
+            <td><span class="chip chip-orange">22%</span></td><td>10%</td>
+            <td><strong>¥213</strong></td><td><span class="chip chip-orange">10%</span></td>
           </tr>
           <tr class="sub">
             <td>【割れチョコ1個】選べるクーベルチュールの贅沢割れチョコ（単品比較）</td>
-            <td>ゆうパケット3cm1個口</td>
-            <td>¥1,980</td>
-            <td>¥1,980</td>
-            <td><span class="chip chip-muted">0%</span></td>
-            <td>¥525</td>
-            <td>¥219</td>
-            <td>¥981</td>
-            <td><span class="chip chip-green">54%</span></td>
-            <td>10%</td>
-            <td><strong>¥783</strong></td>
-            <td><span class="chip chip-green">43%</span></td>
+            <td>ゆうパケット3cm1個口</td><td>¥1,980</td><td>¥1,980</td>
+            <td><span class="chip chip-muted">0%</span></td><td>¥525</td><td>¥219</td><td>¥981</td>
+            <td><span class="chip chip-green">54%</span></td><td>10%</td>
+            <td><strong>¥783</strong></td><td><span class="chip chip-green">43%</span></td>
           </tr>
           <tr class="sub">
             <td>ブラッドオランジェット　ハイカカオ（チョコ掛けブラッド）180g</td>
-            <td>ゆうパケット3cm1個口</td>
-            <td>¥2,999</td>
-            <td>¥2,999</td>
-            <td><span class="chip chip-muted">0%</span></td>
-            <td>¥795</td>
-            <td>¥219</td>
-            <td>¥1,763</td>
-            <td><span class="chip chip-green">63%</span></td>
-            <td>10%</td>
-            <td><strong>¥1,463</strong></td>
-            <td><span class="chip chip-green">53%</span></td>
+            <td>ゆうパケット3cm1個口</td><td>¥2,999</td><td>¥2,999</td>
+            <td><span class="chip chip-muted">0%</span></td><td>¥795</td><td>¥219</td><td>¥1,763</td>
+            <td><span class="chip chip-green">63%</span></td><td>10%</td>
+            <td><strong>¥1,463</strong></td><td><span class="chip chip-green">53%</span></td>
           </tr>
         </tbody>
       </table>
     </div>
-
     <div class="arrow-note">→ 割れチョコ単品カートもこの仕様にする</div>
   </div>
 
@@ -373,7 +319,6 @@
       <span class="section-num">PLAN 02</span>
       <span class="section-title">割れチョコ2袋セットを3セット計6袋購入でオランジェットおまけ</span>
     </div>
-
     <div class="stats">
       <div class="stat-card">
         <div class="stat-label">6袋セット 貢献利益率</div>
@@ -388,95 +333,50 @@
         <div class="stat-val warn">17%</div>
       </div>
     </div>
-
     <div class="tbl-wrap">
       <table>
         <thead>
           <tr>
-            <th>商品名</th>
-            <th>便種</th>
-            <th>店頭売価(税込)</th>
-            <th>実売(税込)</th>
-            <th>割引率</th>
-            <th>製品原価</th>
-            <th>送料原価</th>
-            <th>粗利</th>
-            <th>粗利率</th>
-            <th>fee計</th>
-            <th>貢献利益</th>
-            <th>貢献利益率</th>
+            <th>商品名</th><th>便種</th><th>店頭売価(税込)</th><th>実売(税込)</th>
+            <th>割引率</th><th>製品原価</th><th>送料原価</th><th>粗利</th>
+            <th>粗利率</th><th>fee計</th><th>貢献利益</th><th>貢献利益率</th>
           </tr>
         </thead>
         <tbody>
           <tr class="highlight">
             <td>割れチョコ6袋＋オランジェット（セット合算）</td>
-            <td>—</td>
-            <td>¥14,879</td>
-            <td>¥14,879</td>
-            <td><span class="chip chip-muted">0%</span></td>
-            <td>¥5,940</td>
-            <td>¥624</td>
-            <td>¥931</td>
-            <td><span class="chip chip-red">17%</span></td>
-            <td>10%</td>
-            <td><strong>¥337</strong></td>
-            <td><span class="chip chip-red">6%</span></td>
+            <td>—</td><td>¥14,879</td><td>¥14,879</td>
+            <td><span class="chip chip-muted">0%</span></td><td>¥5,940</td><td>¥624</td><td>¥931</td>
+            <td><span class="chip chip-red">17%</span></td><td>10%</td>
+            <td><strong>¥337</strong></td><td><span class="chip chip-red">6%</span></td>
           </tr>
           <tr class="sub">
             <td>【割れチョコ2個】選べるクーベルチュールの贅沢割れチョコ ×1</td>
-            <td>ゆうパケット3cm1個口</td>
-            <td>¥3,960</td>
-            <td>¥3,960</td>
-            <td><span class="chip chip-muted">0%</span></td>
-            <td>¥1,050</td>
-            <td>¥219</td>
-            <td>¥2,182</td>
-            <td><span class="chip chip-green">60%</span></td>
-            <td>10%</td>
-            <td><strong>¥1,786</strong></td>
-            <td><span class="chip chip-green">49%</span></td>
+            <td>ゆうパケット3cm1個口</td><td>¥3,960</td><td>¥3,960</td>
+            <td><span class="chip chip-muted">0%</span></td><td>¥1,050</td><td>¥219</td><td>¥2,182</td>
+            <td><span class="chip chip-green">60%</span></td><td>10%</td>
+            <td><strong>¥1,786</strong></td><td><span class="chip chip-green">49%</span></td>
           </tr>
           <tr class="sub">
             <td>【割れチョコ2個】選べるクーベルチュールの贅沢割れチョコ ×2</td>
-            <td>ゆうパケット3cm1個口</td>
-            <td>¥3,960</td>
-            <td>¥3,960</td>
-            <td><span class="chip chip-muted">0%</span></td>
-            <td>¥1,050</td>
-            <td>¥219</td>
-            <td>¥2,182</td>
-            <td><span class="chip chip-green">60%</span></td>
-            <td>10%</td>
-            <td><strong>¥1,786</strong></td>
-            <td><span class="chip chip-green">49%</span></td>
+            <td>ゆうパケット3cm1個口</td><td>¥3,960</td><td>¥3,960</td>
+            <td><span class="chip chip-muted">0%</span></td><td>¥1,050</td><td>¥219</td><td>¥2,182</td>
+            <td><span class="chip chip-green">60%</span></td><td>10%</td>
+            <td><strong>¥1,786</strong></td><td><span class="chip chip-green">49%</span></td>
           </tr>
           <tr class="sub">
             <td>【割れチョコ2個】選べるクーベルチュールの贅沢割れチョコ ×3</td>
-            <td>ゆうパケット3cm1個口</td>
-            <td>¥3,960</td>
-            <td>¥3,960</td>
-            <td><span class="chip chip-muted">0%</span></td>
-            <td>¥1,050</td>
-            <td>¥219</td>
-            <td>¥2,182</td>
-            <td><span class="chip chip-green">60%</span></td>
-            <td>10%</td>
-            <td><strong>¥1,786</strong></td>
-            <td><span class="chip chip-green">49%</span></td>
+            <td>ゆうパケット3cm1個口</td><td>¥3,960</td><td>¥3,960</td>
+            <td><span class="chip chip-muted">0%</span></td><td>¥1,050</td><td>¥219</td><td>¥2,182</td>
+            <td><span class="chip chip-green">60%</span></td><td>10%</td>
+            <td><strong>¥1,786</strong></td><td><span class="chip chip-green">49%</span></td>
           </tr>
           <tr class="sub">
             <td>ブラッドオランジェット　ハイカカオ（チョコ掛けブラッド）180g（おまけ）</td>
-            <td>ゆうパケット3cm1個口</td>
-            <td>¥2,999</td>
-            <td>¥2,999</td>
-            <td><span class="chip chip-muted">0%</span></td>
-            <td>¥795</td>
-            <td>¥219</td>
-            <td>¥1,763</td>
-            <td><span class="chip chip-green">63%</span></td>
-            <td>10%</td>
-            <td><strong>¥1,463</strong></td>
-            <td><span class="chip chip-green">53%</span></td>
+            <td>ゆうパケット3cm1個口</td><td>¥2,999</td><td>¥2,999</td>
+            <td><span class="chip chip-muted">0%</span></td><td>¥795</td><td>¥219</td><td>¥1,763</td>
+            <td><span class="chip chip-green">63%</span></td><td>10%</td>
+            <td><strong>¥1,463</strong></td><td><span class="chip chip-green">53%</span></td>
           </tr>
         </tbody>
       </table>
@@ -494,7 +394,6 @@
       例：1袋目スイートチョコ、2袋目オランジェット＋おまけ　／　
       <a href="https://item.rakuten.co.jp/bokunotamatebakoyafish/couverture-huku/" target="_blank">🔗 商品ページ</a>
     </div>
-
     <div class="stats">
       <div class="stat-card">
         <div class="stat-label">クーベル福袋 貢献利益率</div>
@@ -509,134 +408,26 @@
         <div class="stat-val">50%</div>
       </div>
     </div>
-
     <div class="tbl-wrap">
       <table>
         <thead>
           <tr>
-            <th>商品名</th>
-            <th>便種</th>
-            <th>店頭売価(税込)</th>
-            <th>実売(税込)</th>
-            <th>割引率</th>
-            <th>製品原価</th>
-            <th>送料原価</th>
-            <th>粗利</th>
-            <th>粗利率</th>
-            <th>fee計</th>
-            <th>貢献利益</th>
-            <th>貢献利益率</th>
+            <th>商品名</th><th>便種</th><th>店頭売価(税込)</th><th>実売(税込)</th>
+            <th>割引率</th><th>製品原価</th><th>送料原価</th><th>粗利</th>
+            <th>粗利率</th><th>fee計</th><th>貢献利益</th><th>貢献利益率</th>
           </tr>
         </thead>
         <tbody>
           <tr class="highlight">
             <td>クーベルチュール福袋 → 2袋目にオランジェット選択可能</td>
-            <td>—</td>
-            <td>¥5,460</td>
-            <td>¥2,730</td>
-            <td><span class="chip chip-red">50%</span> ●</td>
-            <td>¥1,614</td>
-            <td>¥219</td>
-            <td>¥695</td>
-            <td><span class="chip chip-orange">27%</span></td>
-            <td>10%</td>
-            <td><strong>¥387</strong></td>
-            <td><span class="chip chip-orange">15%</span></td>
+            <td>—</td><td>¥5,460</td><td>¥2,730</td>
+            <td><span class="chip chip-red">50%</span> ●</td><td>¥1,614</td><td>¥219</td><td>¥695</td>
+            <td><span class="chip chip-orange">27%</span></td><td>10%</td>
+            <td><strong>¥387</strong></td><td><span class="chip chip-orange">15%</span></td>
           </tr>
         </tbody>
       </table>
     </div>
-  </div>
-
-  <!-- ぼくたま -->
-  <div class="section" id="sec3">
-    <br>
-    <div class="section-header">
-      <span class="section-num">★ ぼくたま</span>
-      <span class="section-title">プレミアムナッツショコラをセールせずオランジェットがおまけでつく</span>
-    </div>
-
-    <div class="stats">
-      <div class="stat-card">
-        <div class="stat-label">ナッツ＋OJ おまけ 貢献利益率</div>
-        <div class="stat-val warn">14%</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-label">ナッツ単品 貢献利益率</div>
-        <div class="stat-val pos">58%</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-label">OJブラッド単品 貢献利益率</div>
-        <div class="stat-val pos">53%</div>
-      </div>
-    </div>
-
-    <div class="tbl-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>商品名</th>
-            <th>便種</th>
-            <th>店頭売価(税込)</th>
-            <th>実売(税込)</th>
-            <th>割引率</th>
-            <th>製品原価</th>
-            <th>送料原価</th>
-            <th>粗利</th>
-            <th>粗利率</th>
-            <th>fee計</th>
-            <th>貢献利益</th>
-            <th>貢献利益率</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="highlight">
-            <td>選べるプレミアムナッツショコラ250g＋オランジェット（おまけ）</td>
-            <td>ゆうパケット3cm1個口</td>
-            <td>¥3,000</td>
-            <td>¥3,000</td>
-            <td><span class="chip chip-muted">0%</span></td>
-            <td>¥1,441</td>
-            <td>¥624</td>
-            <td>¥713</td>
-            <td><span class="chip chip-orange">26%</span></td>
-            <td>10%</td>
-            <td><strong>¥413</strong></td>
-            <td><span class="chip chip-orange">14%</span></td>
-          </tr>
-          <tr class="sub">
-            <td>選べるプレミアムナッツショコラ250g（ヘーゼル/アーモンド/ピーカン）単品</td>
-            <td>ゆうパケット3cm1個口</td>
-            <td>¥2,640 / ¥3,000</td>
-            <td>¥3,000</td>
-            <td><span class="chip chip-muted">0%</span></td>
-            <td>¥646</td>
-            <td>¥219</td>
-            <td>¥1,912</td>
-            <td><span class="chip chip-green">69%</span></td>
-            <td>10%</td>
-            <td><strong>¥1,612</strong></td>
-            <td><span class="chip chip-green">58%</span></td>
-          </tr>
-          <tr class="sub">
-            <td>ブラッドオランジェット　ハイカカオ（チョコ掛けブラッド）180g</td>
-            <td>ゆうパケット3cm1個口</td>
-            <td>¥2,999</td>
-            <td>¥2,999</td>
-            <td><span class="chip chip-muted">0%</span></td>
-            <td>¥795</td>
-            <td>¥219</td>
-            <td>¥1,763</td>
-            <td><span class="chip chip-green">63%</span></td>
-            <td>10%</td>
-            <td><strong>¥1,463</strong></td>
-            <td><span class="chip chip-green">53%</span></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="arrow-note">→ 大浜と同じく②のクーベルチュール福袋の2袋目にオランジェット選択可能</div>
   </div>
 
 </div>
